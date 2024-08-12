@@ -26,9 +26,12 @@ const Header = ({ username, onSearch }) => {
     console.log("Note Saved:", { heading, content });
     // Add your logic to save the note here
     axios
-      .post("http://localhost:3000/Dashboard", { heading, content })
+      .post("https://notes-app-66cg.onrender.com/Dashboard", {
+        heading,
+        content,
+      })
       .then((response) => {
-        console.log(response);
+        console.log(response); 
       });
     handleClosePopup();
     // Refresh the page to see the updated notes

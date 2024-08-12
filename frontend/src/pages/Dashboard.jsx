@@ -12,7 +12,7 @@ function Dashboard() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/Dashboard", {
+      .get("https://notes-app-66cg.onrender.com/Dashboard", {
         headers: {
           Authorization: `Bearer ${Token}`,
         },
@@ -32,7 +32,7 @@ function Dashboard() {
   const handleDelete = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3000/dashboard/${id}`
+        `https://notes-app-66cg.onrender.com/dashboard/${id}`
       );
       if (response.status === 200) {
         console.log("Note deleted successfully");
@@ -47,12 +47,12 @@ function Dashboard() {
   const handleUpdate = async (id, updatedData) => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/dashboard/${id}`,
+        `https://notes-app-66cg.onrender.com/dashboard/${id}`,
         updatedData
       );
       if (response.status === 200) {
         console.log("Note updated successfully");
-        setNotesData(
+        setNotesData( 
           notesData.map((note) =>
             note._id === id ? response.data.updatedNote : note
           )
