@@ -7,12 +7,12 @@ notes is a website where users can make their account and store there notes .
 ## Tech Stack
 
 **React** – UI library for building interactive interfaces  
-**React Router** – Client-side routing for navigation    
-**Tailwind CSS** – Utility-first CSS framework 
-**Node.js** – JavaScript runtime for backend development
-**Express.js** – Fast and minimalist web framework for Node.js
-**MongoDB** – NoSQL database for storing application data
-**JWT Token** – Secure authentication mechanism for user sessions
+**React Router** – Client-side routing for navigation      
+**Tailwind CSS** – Utility-first CSS framework   
+**Node.js** – JavaScript runtime for backend development  
+**Express.js** – Fast and minimalist web framework for Node.js  
+**MongoDB** – NoSQL database for storing application data  
+**JWT Token** – Secure authentication mechanism for user sessions  
 
 ## Features
 
